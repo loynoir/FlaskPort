@@ -23,4 +23,12 @@ True
 True
 >>> s1.get(url).text == s2.get(url).text
 False
+>>> s1.get(url).text
+'43006'
+>>> s1.get(url).text
+'43006'
+>>> s2.get(url).text
+'43008'
+>>> s2.get(url).text
+'43008'
 ```
