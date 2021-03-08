@@ -4,7 +4,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 
-@app.route("/port")
+@app.route("/")
 def _port():
     return str(request.environ["REMOTE_PORT"]), {"Connection": "keep-alive"}
 
